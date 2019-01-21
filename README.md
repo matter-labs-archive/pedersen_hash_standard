@@ -1,4 +1,4 @@
-# Peddersen hash standardization effort
+# Pedersen hash standardization effort
 
 This desciption is based on the original `saping_crypto` implementation by Zcash.
 
@@ -48,7 +48,7 @@ Personalizetion is 8 bytes (hardcoded)
 This process is iterative
 
 - Take message `m` as a vector
-- Make `nonce` in a form of unsigned integer of 8 bytes starting with zero
+- Make `nonce` in a form of unsigned integer of 8 bits starting with zero
 - Append this nonce to the `m` and run the `group_hash` iteration from above using such concatenated message as a `tag`
 - If `group_hash` returs a point - use this point
 - Else increment `nonce`, form new `tag`
@@ -62,7 +62,7 @@ There is a fine point in this procedure:
 - For `BN256` curve used in Ethereum a bitsize of prime making `Fp` is 254 bits, so hashing will require twice the number of iterations to hit the result the is in `Fp`. Remember, there is no modular redution when byte array is interpreted as an integer inside the field!
 - Range of nonces is 0-255, so in principle we'd have enough tries to hit the point in case of `BN256`, but for other curves this procedure may require a larger set of nonces and we may try to standardize it too in this document. E. g. make nonce an unsigned integer of 32 bits.
 
-### Make Peddersen hash generators
+### Make Pedersen hash generators
 
 This is actually the most trivial procedure of all
 

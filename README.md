@@ -97,4 +97,48 @@ Two additional checks are required:
 
 ## Test vectors
 
-TODO
+### Blake2s
+
+```
+    Creating generators using Blake2s
+    Using personalization `Zcash_PH`
+    Pedersen hash generators:
+    Generator 0
+    X = Fr(0x184570ed4909a81b2793320a26e8f956be129e4eed381acf901718dff8802135)
+    Y = Fr(0x1c3a9a830f61587101ef8cbbebf55063c1c6480e7e5a7441eac7f626d8f69a45)
+    Generator 1
+    X = Fr(0x0afc00ffa0065f5479f53575e86f6dcd0d88d7331eefd39df037eea2d6f031e4)
+    Y = Fr(0x237a6734dd50e044b4f44027ee9e70fcd2e5724ded1d1c12b820a11afdc15c7a)
+    Generator 2
+    X = Fr(0x00fb62ad05ee0e615f935c5a83a870f389a5ea2baccf22ad731a4929e7a75b37)
+    Y = Fr(0x00bc8b1c9d376ceeea2cf66a91b7e2ad20ab8cce38575ac13dbefe2be548f702)
+    Generator 3
+    X = Fr(0x0675544aa0a708b0c584833fdedda8d89be14c516e0a7ef3042f378cb01f6e48)
+    Y = Fr(0x169025a530508ee4f1d34b73b4d32e008b97da2147f15af3c53f405cf44f89d4)
+    Generator 4
+    X = Fr(0x07350a0660a05014168047155c0a0647ea2720ecb182a6cb137b29f8a5cfd37f)
+    Y = Fr(0x3004ad73b7abe27f17ec04b04b450955a4189dd012b4cf4b174af15bd412696a)
+```
+
+### Keccak256
+
+```
+    Creating generators using Keccak256 (Ethereum style)
+    Using personalization `Zcash_PH`
+    Pedersen hash generators:
+    Generator 0
+    X = Fr(0x2dc8e1a19b312f1364389c41f05b47050d79dd94f89556cd6a299af2a18af827)
+    Y = Fr(0x26ef1fdd7067acbadbee2c9e45b62ad0870266c33b77906ba3a0e579f052d962)
+    Generator 1
+    X = Fr(0x107014e1e603dbc9aa6ed137f9db7c1dfbfa6c4cac209e87973040083014d052)
+    Y = Fr(0x291d41fb35848f18fbff70fbaf3872c83ffcddef3073bc561c75f44124656a1a)
+    Generator 2
+    X = Fr(0x06429b1fe714ccddc1c045dc77d910039270017a978b7b2581e66978d6c1f88b)
+    Y = Fr(0x1dec8851eea374983ea82e4f7f45d8e6f4aecfd5f798a595309c16ffc0bf811b)
+    Generator 3
+    X = Fr(0x1d92fe609ef15389f37cdf014c204d0777d5824b855239ae3418fb4765d0ca48)
+    Y = Fr(0x257e53e5da0507796de529ce91ec375d732337a4e9ceffcfe766efbc3226768a)
+    Generator 4
+    X = Fr(0x18ab8de17af7c13dbb6db75d36919fe9a453ab63b03cc840835d0bea4947d3c1)
+    Y = Fr(0x193fad81cdc051494f93f7980d1c91245865618e69b61705f23353f88384c307)
+```
